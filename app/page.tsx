@@ -278,11 +278,11 @@ export default function Portfolio() {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">Professional Summary</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-4xl font-bold text-accent mb-2">12+</div>
+              <div className="text-4xl font-bold text-accent mb-2">14+</div>
               <div className="text-muted-foreground">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-accent mb-2">5+</div>
+              <div className="text-4xl font-bold text-accent mb-2">9+</div>
               <div className="text-muted-foreground">Years Experience</div>
             </div>
             <div className="text-center">
