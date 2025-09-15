@@ -151,8 +151,18 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-accent/5 py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-primary mb-4 text-balance">Fullstack Developer</h1>
+          <div className="mb-8 flex flex-col items-center">
+            <div className="relative w-32 h-32 md:w-40 md:h-40 mb-6">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profil.jpg-XUbvbY8VlRTm9BaAFY8zGUCMRnjNo7.jpeg"
+                alt="Ore Akinwole - Fullstack Developer"
+                fill
+                className="object-cover rounded-full border-4 border-primary/20 shadow-lg"
+                priority
+              />
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold text-primary mb-4 text-balance">Ore Akinwole</h1>
+            <h2 className="text-2xl md:text-3xl font-semibold text-accent mb-4">Senior Fullstack Developer</h2>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty max-w-3xl mx-auto">
               Experienced developer specializing in React, Laravel, Vue.js, and React Native. Building innovative
               solutions across fintech, AI, logistics, healthcare, education, and humanitarian sectors.
@@ -160,24 +170,38 @@ export default function Portfolio() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              <Mail className="mr-2 h-5 w-5" />
-              Contact Me
+            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+              <a href="mailto:oreakinwole@gmail.com">
+                <Mail className="mr-2 h-5 w-5" />
+                Contact Me
+              </a>
             </Button>
-            <Button variant="outline" size="lg">
-              <ExternalLink className="mr-2 h-5 w-5" />
-              View Projects
+            <Button variant="outline" size="lg" asChild>
+              <a href="https://www.linkedin.com/in/ore-akinwole-4b0a79140/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="mr-2 h-5 w-5" />
+                LinkedIn
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <a href="https://github.com/oreakinwole/" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-5 w-5" />
+                GitHub
+              </a>
             </Button>
           </div>
 
-          <div className="flex justify-center gap-6 text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-6 text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4" />
+              <span>+234 812 304 8868</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Mail className="h-4 w-4" />
+              <span>oreakinwole@gmail.com</span>
+            </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
               <span>Available Worldwide</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4" />
-              <span>Remote & On-site</span>
             </div>
           </div>
         </div>
@@ -314,18 +338,75 @@ export default function Portfolio() {
             opportunities.
           </p>
 
+          <Card className="border-border/50 mb-8">
+            <CardContent className="p-8">
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div>
+                  <h3 className="font-semibold text-primary mb-4">Contact Information</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <Phone className="h-4 w-4 text-accent" />
+                      <span>+234 812 304 8868</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Mail className="h-4 w-4 text-accent" />
+                      <span>oreakinwole@gmail.com</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Mail className="h-4 w-4 text-accent" />
+                      <span>oreakinwole@outlook.com</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary mb-4">Professional Links</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <Linkedin className="h-4 w-4 text-accent" />
+                      <a
+                        href="https://www.linkedin.com/in/ore-akinwole-4b0a79140/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-accent transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Github className="h-4 w-4 text-accent" />
+                      <a
+                        href="https://github.com/oreakinwole/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-accent transition-colors"
+                      >
+                        GitHub Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              <Mail className="mr-2 h-5 w-5" />
-              Send Email
+            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+              <a href="mailto:oreakinwole@gmail.com">
+                <Mail className="mr-2 h-5 w-5" />
+                Send Email
+              </a>
             </Button>
-            <Button variant="outline" size="lg">
-              <Linkedin className="mr-2 h-5 w-5" />
-              LinkedIn
+            <Button variant="outline" size="lg" asChild>
+              <a href="https://www.linkedin.com/in/ore-akinwole-4b0a79140/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="mr-2 h-5 w-5" />
+                LinkedIn
+              </a>
             </Button>
-            <Button variant="outline" size="lg">
-              <Github className="mr-2 h-5 w-5" />
-              GitHub
+            <Button variant="outline" size="lg" asChild>
+              <a href="https://github.com/oreakinwole/" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-5 w-5" />
+                GitHub
+              </a>
             </Button>
           </div>
         </div>
@@ -334,7 +415,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border/50 bg-muted/20">
         <div className="max-w-6xl mx-auto text-center text-muted-foreground">
-          <p>&copy; 2024 Professional Developer Portfolio. Available for new opportunities.</p>
+          <p>&copy; 2025 Ore Akinwole - Senior Fullstack Developer. Available for new opportunities.</p>
         </div>
       </footer>
     </div>
